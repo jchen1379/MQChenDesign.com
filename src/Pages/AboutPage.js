@@ -2,7 +2,7 @@ import React from 'react';
 
 export function AboutPage() {
   const email = "mailto:mingqchen95@gmail.com";
-  const resume = "https://static1.squarespace.com/static/5a0b241964b05f2730b887fe/t/5b0c52592b6a288855bb55f4/1527534169944/Mingqin%27s+Resume.pdf";
+  const resume = "https://jchen1379.github.io/MQ-Chen-Design-React/src/Projects/Resume.pdf";
   const ins = "https://www.instagram.com/h.y.photographer/";
 
   return (
