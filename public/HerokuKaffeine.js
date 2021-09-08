@@ -5,4 +5,4 @@ const WakeUpHeroku = () => {
   request.send();
 }
 
-setInterval(WakeUpHeroku, 25*60*1000);
+setInterval(WakeUpHeroku, 20*60*1000);
