@@ -7,6 +7,7 @@ import {ProjectNavBar} from "../Components/ProjectDisplay/ProjectNavBar";
 import {useLocation} from "react-router";
 import {getCurrentProject, getNextProject, getPrevProject} from "./DesignPage";
 import {photographyPageProjectList} from "./PhotographyPageProjectList";
+import {recordVisitingData} from '../Utils/WebsiteTrafficMonitor';
 
 const urlBase = '/photography';
 
@@ -14,6 +15,11 @@ const projectList = photographyPageProjectList.map(project => project.projectId)
 
 export function PhotographyPage() {
   const location = useLocation();
+
+  React.useEffect(() => {
+    recordVisitingData(getCurrentProject(location.pathname));
+  });
+
   return (
     <>
       <Router>

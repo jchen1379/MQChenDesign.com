@@ -6,6 +6,7 @@ import ScrollToTop from "../Utils/ScrollToTop";
 import {ProjectNavBar} from "../Components/ProjectDisplay/ProjectNavBar";
 import {useLocation} from "react-router";
 import {designPageProjectList} from "./DesignPageProjectList";
+import {recordVisitingData} from '../Utils/WebsiteTrafficMonitor';
 
 const urlBase = '/graphic-design';
 
@@ -32,6 +33,11 @@ export function getCurrentProject(path) {
 
 export function DesignPage() {
   const location = useLocation();
+
+  React.useEffect(() => {
+    recordVisitingData(getCurrentProject(location.pathname));
+  });
+
   return (
     <>
       <Router>

@@ -1,9 +1,14 @@
 import React from 'react';
+import {recordVisitingData} from '../Utils/WebsiteTrafficMonitor';
 
 export function AboutPage() {
   const email = "mailto:mingqchen95@gmail.com";
   const resume = "https://jchen1379.github.io/MQ-Chen-Design-React/src/Projects/Resume.pdf";
   const ins = "https://www.instagram.com/h.y.photographer/";
+
+  React.useEffect(() => {
+    recordVisitingData('About');
+  });
 
   return (
     <>
