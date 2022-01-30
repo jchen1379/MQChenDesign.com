@@ -1,7 +1,7 @@
 const Http = new XMLHttpRequest();
 
 export const URL = 'https://website-traffic-monitor.herokuapp.com/website_traffic_monitor';
-export const Domain = 'frankyzhang';
+export const Domain = 'mqchendesign';
 
 export function recordVisitingData(project) {
   const data = {
