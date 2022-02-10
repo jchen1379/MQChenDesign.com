@@ -46,6 +46,7 @@ export function DesignPage() {
             <Route exact path={urlBase}/>
             {designPageProjectList.map((project)=> (
               <Route exact
+                     key={project.projectId}
                      path={`${urlBase}/${project.projectId}`}
                      component={project.component}/>
             ))}
@@ -63,6 +64,7 @@ export function DesignPage() {
       <ProjectThumbnails>
         {designPageProjectList.map((project) => (
           <ProjectThumbnail apiBase={urlBase}
+                            key={project.projectId}
                             projectName={project.projectId}
                             projectTitle={project.projectTitle}
                             projectCoverUrl={project.projectCoverUrl}/>

@@ -127,6 +127,7 @@ export const VideoContainer = ({videoUrl}) => {
       <iframe className="responsive-iframe"
               src={videoUrl}
               frameBorder="0"
+              title={"Video"}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen/>
     </div>
