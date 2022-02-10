@@ -1,7 +1,7 @@
 const Http = new XMLHttpRequest();
 
-export const URL = 'https://website-traffic-monitor.herokuapp.com/website_traffic_monitor';
-export const Domain = 'mqchendesign';
+const URL = process.env.REACT_APP_WEBSITE_TRAFFIC_MONITOR_API;
+const Domain = process.env.REACT_APP_DOMAIN_NAME;
 
 export function recordVisitingData(project) {
   const data = {
