@@ -62,7 +62,6 @@ export const Contrast = () => {
         <FullSizeProjectImage src={require("../Projects/photography_contrast/WechatIMG593.jpg").default}/>
         <FullSizeProjectImage src={require("../Projects/photography_contrast/WechatIMG597.jpg").default}/>
         <FullSizeProjectImage src={require("../Projects/photography_contrast/WechatIMG594.jpg").default}/>
-        <FullSizeProjectImage src={require("../Projects/photography_contrast/WechatIMG599.jpg").default}/>
         <FullSizeProjectImage src={require("../Projects/photography_contrast/WechatIMG583.jpg").default}/>
         <FullSizeProjectImage src={require("../Projects/photography_contrast/WechatIMG595.jpg").default}/>
       </PosterStyleProjectImage>
